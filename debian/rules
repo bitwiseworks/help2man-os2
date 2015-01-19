@@ -77,7 +77,7 @@ source diff:
 # maintainer pre-release setup
 AM_DOC = COPYING INSTALL
 AM_AUX = install-sh missing mkinstalldirs
-AM_DIR = $(shell ls -d /usr/share/automake* 2>/dev/null | tail -1)
+AM_DIR = $(shell ls -d /@unixroot/usr/share/automake* /usr/share/automake* 2>/dev/null | tail -1)
 VERSION = $(shell ./help2man.PL --version)
 maint-prep:
 	test -n $(AM_DIR)
