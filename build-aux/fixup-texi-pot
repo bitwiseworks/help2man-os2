@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+# Post-process the texinfo template to remove some entries which should not be
+# translated.
+
+use strict;
+use warnings;
+
+*OUT = *STDOUT;
+if (@ARGV and $ARGV[0] =~ /^-o(.*)/)
+{
+    shift;
+    my $out = $1 || shift || die "$0: missing output file\n";
+    open OUT, '>', $out or die "$0: can't open $out ($!)\n";
+}
+
+$/ = '';  # read paragraphs
+while (<>)
+{
+    # Path name for dir entry.  Corrected by fixup-texi-trans.
+    next if /^#\. type: menuentry/m
+	and /^msgid "help2man: \(help2man\)"/m;
+
+    # "Top" node is special to texinfo.
+    next if /^#\. type: node/m
+	and /^msgid "Top"/m;
+
+    # Macro commands, and parameters.
+    next if /^msgid "\@unmacro/m;
+    next if /^msgid "\\\\text\\\\"/m;
+
+    print OUT;
+}
