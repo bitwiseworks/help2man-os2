@@ -14,6 +14,8 @@
 SHELL = /bin/bash
 DPKG_EXPORT_BUILDFLAGS = 1
 
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
 include /usr/share/dpkg/architecture.mk
 include /usr/share/dpkg/buildflags.mk
 
@@ -25,6 +27,7 @@ build: build-arch build-indep
 build-arch build-indep: build-stamp
 build-stamp:
 	dh_testdir
+	dh_update_autotools_config  # Update config.guess, config.sub
 	./configure --prefix=/usr --enable-nls --mandir='$${prefix}/share/man' \
 	    --infodir='$${prefix}/share/info' $(CONFARGS)
 
@@ -81,7 +84,7 @@ AM_DIR = $(shell ls -d /@unixroot/usr/share/automake* /usr/share/automake* 2>/de
 VERSION = $(shell ./help2man.PL --version)
 maint-prep:
 	test -n $(AM_DIR)
-	test `dpkg-parsechangelog | sed -n 's/^Version:\s\+//p'` = $(VERSION)
+	test `dpkg-parsechangelog --show-field=Version` = $(VERSION)
 	cp $(addprefix $(AM_DIR)/,$(AM_DOC)) .
 	cp $(addprefix $(AM_DIR)/,$(AM_AUX)) build-aux
 	(echo "		README for GNU help2man version $(VERSION)"; \

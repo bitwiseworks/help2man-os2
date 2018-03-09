@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: help2man 1.43.2\n"
 "Report-Msgid-Bugs-To: Brendan O'Dea <bug-help2man@gnu.org>\n"
-"POT-Creation-Date: 2014-03-26 21:02+1100\n"
-"PO-Revision-Date: 2013-06-07 22:57+0900\n"
+"POT-Creation-Date: 2017-09-23 13:39+1000\n"
+"PO-Revision-Date: 2017-09-23 13:57+1000\n"
 "Last-Translator: Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
 "2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 "\n"
@@ -35,7 +35,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
 "2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 "\n"
@@ -117,12 +117,12 @@ msgstr "%s: `%s' を開けません (%s)"
 #. Translators: "NAME", "SYNOPSIS" and other one or two word strings in all
 #. upper case are manual page section headings.  The man(1) manual page in your
 #. language, if available should provide the conventional translations.
-#: help2man:209 help2man:328 help2man:334 help2man:685 help2man.h2m.PL:88
+#: help2man:209 help2man:340 help2man:346 help2man:697 help2man.h2m.PL:88
 #: help2man.h2m.PL:138
 msgid "NAME"
 msgstr "名前"
 
-#: help2man:209 help2man:403 help2man:685 help2man.h2m.PL:139
+#: help2man:209 help2man:415 help2man:697 help2man.h2m.PL:139
 msgid "SYNOPSIS"
 msgstr "書式"
 
@@ -135,34 +135,34 @@ msgstr "%s: `%s' に有効な情報が見つかりません"
 #. the English version expands to the month as a word and the full year.  It
 #. is used on the footer of the generated manual pages.  If in doubt, you may
 #. just use %x as the value (which should be the full locale-specific date).
-#: help2man:277
+#: help2man:289
 msgid "%B %Y"
 msgstr "%Y年%B"
 
-#: help2man:284
+#: help2man:296
 #, perl-format
 msgid "%s: can't unlink %s (%s)"
 msgstr "%s: %s を削除できません (%s)"
 
-#: help2man:288
+#: help2man:300
 #, perl-format
 msgid "%s: can't create %s (%s)"
 msgstr "%s: %s を作成できません (%s)"
 
-#: help2man:342
+#: help2man:354
 #, perl-format
 msgid "%s \\- manual page for %s %s"
 msgstr "%s \\- %s %s のマニュアルページ"
 
-#: help2man:356
+#: help2man:368
 msgid "System Administration Utilities"
 msgstr "システム管理ユーティリティ"
 
-#: help2man:357
+#: help2man:369
 msgid "Games"
 msgstr "ゲーム"
 
-#: help2man:358
+#: help2man:370
 msgid "User Commands"
 msgstr "ユーザーコマンド"
 
@@ -172,15 +172,15 @@ msgstr "ユーザーコマンド"
 #. Usage: cp [OPTION]... [-T] SOURCE DEST
 #. or:  cp [OPTION]... SOURCE... DIRECTORY
 #. or:  cp [OPTION]... -t DIRECTORY SOURCE...
-#: help2man:369
+#: help2man:381
 msgid "Usage"
 msgstr "使用法"
 
-#: help2man:370
+#: help2man:382
 msgid "or"
 msgstr "または"
 
-#: help2man:407 help2man:685 help2man.h2m.PL:140
+#: help2man:419 help2man:697 help2man.h2m.PL:140
 msgid "DESCRIPTION"
 msgstr "説明"
 
@@ -192,67 +192,67 @@ msgstr "説明"
 #. "(?:[\\w-]+ +)?" in the bug reporting pattern is used to indicate an
 #. optional word, so that either "Report bugs" or "Report _program_ bugs" will
 #. be matched.
-#: help2man:432
+#: help2man:444
 msgid "Report +(?:[\\w-]+ +)?bugs|Email +bug +reports +to"
 msgstr ".*バグを発見した場合は"
 
-#: help2man:433
+#: help2man:445
 msgid "Written +by"
 msgstr "^作者"
 
-#: help2man:434
+#: help2man:446
 msgid "Options"
 msgstr "オプション"
 
-#: help2man:435
+#: help2man:447
 msgid "Environment"
 msgstr "環境変数"
 
-#: help2man:436
+#: help2man:448
 msgid "Files"
 msgstr "ファイル"
 
-#: help2man:437
+#: help2man:449
 msgid "Examples"
 msgstr "例"
 
-#: help2man:438
+#: help2man:450
 msgid "This +is +free +software"
 msgstr "This +is +free +software"
 
-#: help2man:452 help2man:685 help2man.h2m.PL:141
+#: help2man:464 help2man:697 help2man.h2m.PL:141
 msgid "OPTIONS"
 msgstr "オプション"
 
-#: help2man:457 help2man:686 help2man.h2m.PL:142
+#: help2man:469 help2man:698 help2man.h2m.PL:142
 msgid "ENVIRONMENT"
 msgstr "環境変数"
 
-#: help2man:462 help2man:686 help2man.h2m.PL:143
+#: help2man:474 help2man:698 help2man.h2m.PL:143
 msgid "FILES"
 msgstr "ファイル"
 
-#: help2man:467 help2man:590 help2man:686 help2man.h2m.PL:144
+#: help2man:479 help2man:602 help2man:698 help2man.h2m.PL:144
 msgid "EXAMPLES"
 msgstr "例"
 
-#: help2man:483 help2man:611 help2man:687 help2man.h2m.PL:148
+#: help2man:495 help2man:623 help2man:699 help2man.h2m.PL:148
 msgid "COPYRIGHT"
 msgstr "著作権"
 
-#: help2man:489 help2man:617 help2man:687 help2man.h2m.PL:147
+#: help2man:501 help2man:629 help2man:699 help2man.h2m.PL:147
 msgid "REPORTING BUGS"
 msgstr "バグの報告"
 
-#: help2man:495 help2man:686 help2man.h2m.PL:146
+#: help2man:507 help2man:698 help2man.h2m.PL:146
 msgid "AUTHOR"
 msgstr "作者"
 
-#: help2man:649 help2man:687 help2man.h2m.PL:149
+#: help2man:661 help2man:699 help2man.h2m.PL:149
 msgid "SEE ALSO"
 msgstr "関連項目"
 
-#: help2man:652
+#: help2man:664
 #, perl-format
 msgid ""
 "The full documentation for\n"
@@ -278,17 +278,17 @@ msgstr ""
 ".PP\n"
 "を使用すると完全なマニュアルを読むことができるはずだ。\n"
 
-#: help2man:718
+#: help2man:730
 #, perl-format
 msgid "%s: error writing to %s (%s)"
 msgstr "%s: %s への書込エラー (%s)"
 
-#: help2man:744
+#: help2man:756
 #, perl-format
 msgid "%s: can't get `%s' info from %s%s"
 msgstr "%s: `%s' の情報を %s%s から取得できません"
 
-#: help2man:746
+#: help2man:758
 msgid "Try `--no-discard-stderr' if option outputs to stderr"
 msgstr ""
 "もしオプションが標準エラー出力に出力しているならば、`--no-discard-stderr'　を"

@@ -1,3 +1,89 @@
+help2man (1.47.6) unstable; urgency=medium
+
+  * Update to debhelper v11.
+  * Move repository to salsa.debian.org.
+  * Update Vcs-Git/Vcs-Browser.
+  * Update standards version to 4.1.3:
+    + update config.{guess,sub} at build time
+  * Add Brazilian Portuguese translation of info page (thanks to Rafael
+    Fontenelle).
+  * Update Hungarian translation (thanks to Balázs Úr)
+  * Update Brazilian Portuguese translation (thanks to Rafael Fontenelle).
+
+ -- Brendan O'Dea <bod@debian.org>  Wed, 28 Feb 2018 22:32:32 +1100
+
+help2man (1.47.5) unstable; urgency=medium
+
+  * Refresh Brazilian Portuguese translation from translation project copy
+    (trivial date change).
+  * Update Swedish translation (thanks to Sebastian Rasmussen).
+  * Use POSIX compliant TZ when setting UTC (thanks to Paul Eggert).
+  * Update copyright years.
+
+ -- Brendan O'Dea <bod@debian.org>  Sat, 23 Sep 2017 13:38:28 +1000
+
+help2man (1.47.4) unstable; urgency=medium
+
+  * Update Serbian translation (thanks to Мирослав Николић).
+  * Add Chinese (simplified) translation of info page (thanks to Mingye Wang).
+  * Update Brazilian Portuguese translation (thanks to Rafael Fontenelle).
+  * Reduce the minimum translation to 60% for info files.
+  * Extract version from dpkg-parsechangelog using the new flag, rather
+    than sed.
+  * Add hardening flags via DEB_BUILD_MAINT_OPTIONS.
+  * Use secure VCS URIs.
+  * Update standards version to 3.9.8.
+
+ -- Brendan O'Dea <bod@debian.org>  Mon, 09 May 2016 17:20:39 +1000
+
+help2man (1.47.3) unstable; urgency=medium
+
+  * Filter more untranslatable strings from help2man-texi.pot, and add a
+    note to translators about translation of cross-references.
+
+ -- Brendan O'Dea <bod@debian.org>  Wed, 18 Nov 2015 21:41:15 +1100
+
+help2man (1.47.2) unstable; urgency=medium
+
+  * Update Esperanto translation (thanks to Felipe Castro).
+  * Add Chinese (simplified) translation (thanks to Mingye Wang).
+
+ -- Brendan O'Dea <bod@debian.org>  Fri, 11 Sep 2015 21:25:08 +1000
+
+help2man (1.47.1) unstable; urgency=medium
+
+  * Set document language for localised info pages.
+  * Update German translations (thanks to Mario Blättermann).
+  * Update Ukranian translations (thanks to Yuri Chornoivan).
+  * Update French translations (thanks to David Prévot).
+  * Update Vietnamese translation (thanks to Trần Ngọc Quân).
+  * Update Norwegian Bokmaal translation (thanks to Johnny A. Solbu).
+  * Update Russian translation (thanks to Yuri Kozlov).
+  * Update Danish translation (thanks to Joe Hansen).
+  * Update Polish translations (thanks to Jakub Bogusz).
+  * Update Spanish translation and add translation of the info page
+    (thanks to Antonio Ceballos).
+  * Add support for reproducible builds by using $SOURCE_DATE_EPOCH as the
+    date for the generated pages (closes: #787444).
+
+ -- Brendan O'Dea <bod@debian.org>  Mon, 15 Jun 2015 23:06:35 +1000
+
+help2man (1.46.6) unstable; urgency=medium
+
+  * Add Danish translation (thanks to Joe Hansen).
+  * Update Finnish translation (thanks to Jorma Karvonen).
+
+ -- Brendan O'Dea <bod@debian.org>  Sun, 26 Apr 2015 13:52:49 +1000
+
+help2man (1.46.5) unstable; urgency=medium
+
+  * Fix a problem with LC_ALL being imported twice with different
+    prototypes from POSIX and Locale::gettext (thanks to Gavin Smith for
+    the report).
+  * Update copyright years.
+
+ -- Brendan O'Dea <bod@debian.org>  Sat, 31 Jan 2015 00:34:50 +1100
+
 help2man (1.46.4) unstable; urgency=medium
 
   * Include architecture.mk and buildflags.mk into rules to replace the

@@ -33,13 +33,14 @@ LINGUAS_TEXI = $(basename $(notdir $(wildcard $(srcdir)/po-texi/*.po)))
 CC = @CC@
 PERL = @PERL@
 LIBS = @LIBS@
-FIND_VPATH = $(auxdir)/find-vpath
+FIND_VPATH = $(auxdir)/find-vpath  # locate a file in $VPATH
 MKINSTALLDIRS = $(auxdir)/mkinstalldirs
 INSTALL = @INSTALL@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_INFO = @INSTALL_INFO@
+LOOKUP_LOCALE = $(auxdir)/lookup-locale  # get full locale from extension
 MAKEINFO = @MAKEINFO@
 MSGFMT = @MSGFMT@
 XGETTEXT = @XGETTEXT@
@@ -174,8 +175,7 @@ $(target).%.1: $(srcdir)/$(target).PL $(srcdir)/$(target).h2m.PL \
 $(target).%.h2m: $(srcdir)/$(target).h2m.PL $(srcdir)/po/%.po
 	set -e; \
 	lang=$(patsubst $(target).%.h2m,%,$@); \
-	locale=$$(echo $$lang $$lang | \
-	     sed -n "/^$$lang"'\s/{s/^\S\+\s\+//p; q}' $(srcdir)/locales -); \
+	locale=$$($(LOOKUP_LOCALE) $$lang $(srcdir)/locales); \
 	$(MAKE) localetmp/$$lang/LC_MESSAGES/$(target).mo; \
 	$(PERL) $(srcdir)/$(target).h2m.PL --locale="$$locale" \
 	    --message-dir=localetmp --output=$@
@@ -186,13 +186,16 @@ $(target).info: $(srcdir)/$(target).texi
 
 info_l10n: $(addprefix $(target)-,$(addsuffix .info,$(LINGUAS_TEXI)))
 $(target)-%.info: $(target)-%.texi
-	$(MAKEINFO) $? -o $@.tmp
+	set -e; \
+	lang=$(patsubst $(target)-%.info,%,$@); \
+	locale=$$($(LOOKUP_LOCALE) $$lang $(srcdir)/locales); \
+	$(MAKEINFO) --output=$@.tmp --document-language="$$locale" $?
 	$(FIXUP_TEXI_TRANS) -o $@ $@.tmp
 	rm -f $@.tmp
 
 $(target)-%.texi: $(srcdir)/po-texi/%.po $(srcdir)/help2man.texi
 	$(PO4A_TRANSLATE) -f texinfo -m $(srcdir)/help2man.texi \
-	    -p $(filter %.po,$^) -l $@
+	    -p $(filter %.po,$^) -l $@ -k 60
 
 dvi: $(target).dvi
 $(target).dvi: $(srcdir)/$(target).texi

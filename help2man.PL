@@ -16,7 +16,7 @@ use 5.008;
 use Config;
 use Getopt::Long;
 
-my ($program, $version) = ('help2man', '1.46.4');
+my ($program, $version) = ('help2man', '1.47.6');
 
 my %opts;
 die "Usage: $0 [--quiet] [--stdout] [--with-gettext] [--name] [--version]\n"
@@ -62,7 +62,7 @@ print OUT <<'!NO!SUBS!';
 
 # Generate a short man page from --help and --version output.
 # Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009,
-# 2010, 2011, 2012, 2013, 2014 Free Software Foundation, Inc.
+# 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -89,7 +89,7 @@ use POSIX qw(strftime setlocale LC_ALL);
 !NO!SUBS!
 
 print OUT <<'!NO!SUBS!' if $opts{'with-gettext'};
-use Locale::gettext;
+use Locale::gettext qw(gettext);
 use Encode qw(decode encode);
 use I18N::Langinfo qw(langinfo CODESET);
 !NO!SUBS!
@@ -163,7 +163,7 @@ my $version_info = enc_user sprintf _(<<'EOT'), $this_program, $this_version;
 GNU %s %s
 
 Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010,
-2011, 2012, 2013, 2014 Free Software Foundation, Inc.
+2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
@@ -366,11 +366,23 @@ for my $hash (\(%include, %replace, %append, %append_match))
 my $help_text   = get_option_value $ARGV[0], $help_option;
 $version_text ||= get_option_value $ARGV[0], $version_option;
 
+# By default the generated manual pages will include the current date.  This may
+# however be overriden by setting the environment variable $SOURCE_DATE_EPOCH to
+# an integer value of the seconds since the UNIX epoch.  This is primarily
+# intended to support reproducible builds (wiki.debian.org/ReproducibleBuilds)
+# and will additionally ensure that the output date string is UTC.
+my $epoch_secs = time;
+if (exists $ENV{SOURCE_DATE_EPOCH} and $ENV{SOURCE_DATE_EPOCH} =~ /^(\d+)$/)
+{
+    $epoch_secs = $1;
+    $ENV{TZ} = 'UTC0';
+}
+
 # Translators: the following message is a strftime(3) format string, which in
 # the English version expands to the month as a word and the full year.  It
 # is used on the footer of the generated manual pages.  If in doubt, you may
 # just use %x as the value (which should be the full locale-specific date).
-my $date = enc strftime _("%B %Y"), localtime;
+my $date = enc strftime _("%B %Y"), localtime $epoch_secs;
 my $program = program_basename $ARGV[0];
 my $package = $program;
 my $version;

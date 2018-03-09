@@ -2,13 +2,13 @@
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the help2man package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2013, 2014.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: help2man 1.45.2pre1\n"
+"Project-Id-Version: help2man 1.46.6\n"
 "Report-Msgid-Bugs-To: Brendan O'Dea <bug-help2man@gnu.org>\n"
-"POT-Creation-Date: 2014-03-26 21:02+1100\n"
-"PO-Revision-Date: 2014-07-02 06:47+0300\n"
+"POT-Creation-Date: 2017-09-23 13:39+1000\n"
+"PO-Revision-Date: 2017-09-23 13:57+1000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
@@ -23,8 +23,9 @@ msgstr ""
 msgid ""
 "GNU %s %s\n"
 "\n"
-"Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
+"2010,\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 "\n"
@@ -32,8 +33,11 @@ msgid ""
 msgstr ""
 "GNU %s %s\n"
 "\n"
-"© Free Software Foundation, Inc., 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010, 2011, 2012, 2013, 2014\n"
-"Це програмне забезпечення є вільним, умови копіювання викладено у його початкових кодах. Умовами ліцензування програми НЕ передбачено жодних гарантій, зокрема гарантій працездатності або придатності для певної мети.\n"
+"© Free Software Foundation, Inc., 1997, 1998, 1999, 2000, 2001, 2002, 2003, "
+"2004, 2005, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017\n"
+"Це програмне забезпечення є вільним, умови копіювання викладено у його "
+"початкових кодах. Умовами ліцензування програми НЕ передбачено жодних "
+"гарантій, зокрема гарантій працездатності або придатності для певної мети.\n"
 "\n"
 "Автором програми є Brendan O'Dea <bod@debian.org>\n"
 
@@ -58,7 +62,8 @@ msgid ""
 "     --help              print this help, then exit\n"
 "     --version           print version number, then exit\n"
 "\n"
-"EXECUTABLE should accept `--help' and `--version' options and produce output on\n"
+"EXECUTABLE should accept `--help' and `--version' options and produce output "
+"on\n"
 "stdout although alternatives may be specified using:\n"
 "\n"
 " -h, --help-option=STRING     help option string\n"
@@ -68,7 +73,8 @@ msgid ""
 "\n"
 "Report bugs to <bug-help2man@gnu.org>.\n"
 msgstr ""
-"%s створює сторінку довідника (man) на основі даних виконання програми з параметрами --help та --version.\n"
+"%s створює сторінку довідника (man) на основі даних виконання програми з "
+"параметрами --help та --version.\n"
 "\n"
 "Використання: %s [ПАРАМЕТР]... ВИКОНУВАНИЙ_ФАЙЛ\n"
 "\n"
@@ -86,13 +92,16 @@ msgstr ""
 "     --help              показати ці довідкові дані, потім завершити роботу\n"
 "     --version           показати дані щодо версії, потім завершити роботу\n"
 "\n"
-"У ВИКОНУВАНОМУ_ФАЙЛІ має бути передбачено використання параметрів «--help» та «--version» з виведенням\n"
-"даних до stdout. Ви можете внести зміни до цих типових вимог за допомогою таких параметрів:\n"
+"У ВИКОНУВАНОМУ_ФАЙЛІ має бути передбачено використання параметрів «--help» "
+"та «--version» з виведенням\n"
+"даних до stdout. Ви можете внести зміни до цих типових вимог за допомогою "
+"таких параметрів:\n"
 "\n"
 " -h, --help-option=РЯДОК      рядок параметра виведення довідкових даних\n"
 " -v, --version-option=РЯДОК   рядок параметра виведення даних щодо версії\n"
 " --version-string=РЯДОК       рядок версії\n"
-" --no-discard-stderr          використовувати дані зі stderr під час обробки виведених даних\n"
+" --no-discard-stderr          використовувати дані зі stderr під час обробки "
+"виведених даних\n"
 "\n"
 "Про вади повідомляйте на адресу <bug-help2man@gnu.org>.\n"
 
@@ -104,12 +113,12 @@ msgstr "%s: не вдалося відкрити «%s» (%s)"
 #. Translators: "NAME", "SYNOPSIS" and other one or two word strings in all
 #. upper case are manual page section headings.  The man(1) manual page in your
 #. language, if available should provide the conventional translations.
-#: help2man:209 help2man:328 help2man:334 help2man:685 help2man.h2m.PL:88
+#: help2man:209 help2man:340 help2man:346 help2man:697 help2man.h2m.PL:88
 #: help2man.h2m.PL:138
 msgid "NAME"
 msgstr "НАЗВА"
 
-#: help2man:209 help2man:403 help2man:685 help2man.h2m.PL:139
+#: help2man:209 help2man:415 help2man:697 help2man.h2m.PL:139
 msgid "SYNOPSIS"
 msgstr "КОРОТКИЙ ОПИС"
 
@@ -122,34 +131,34 @@ msgstr "%s: у `%s' не виявлено належних даних"
 #. the English version expands to the month as a word and the full year.  It
 #. is used on the footer of the generated manual pages.  If in doubt, you may
 #. just use %x as the value (which should be the full locale-specific date).
-#: help2man:277
+#: help2man:289
 msgid "%B %Y"
 msgstr "%x"
 
-#: help2man:284
+#: help2man:296
 #, perl-format
 msgid "%s: can't unlink %s (%s)"
 msgstr "%s: не вдалося вилучити %s (%s)"
 
-#: help2man:288
+#: help2man:300
 #, perl-format
 msgid "%s: can't create %s (%s)"
 msgstr "%s: не вдалося створити %s (%s)"
 
-#: help2man:342
+#: help2man:354
 #, perl-format
 msgid "%s \\- manual page for %s %s"
 msgstr "%s \\— сторінка довідника для %s %s"
 
-#: help2man:356
+#: help2man:368
 msgid "System Administration Utilities"
 msgstr "Інструменти системного адміністрування"
 
-#: help2man:357
+#: help2man:369
 msgid "Games"
 msgstr "Ігри"
 
-#: help2man:358
+#: help2man:370
 msgid "User Commands"
 msgstr "Команди користувача"
 
@@ -159,15 +168,15 @@ msgstr "Команди користувача"
 #. Usage: cp [OPTION]... [-T] SOURCE DEST
 #. or:  cp [OPTION]... SOURCE... DIRECTORY
 #. or:  cp [OPTION]... -t DIRECTORY SOURCE...
-#: help2man:369
+#: help2man:381
 msgid "Usage"
 msgstr "Використання"
 
-#: help2man:370
+#: help2man:382
 msgid "or"
 msgstr "або"
 
-#: help2man:407 help2man:685 help2man.h2m.PL:140
+#: help2man:419 help2man:697 help2man.h2m.PL:140
 msgid "DESCRIPTION"
 msgstr "ОПИС"
 
@@ -179,67 +188,67 @@ msgstr "ОПИС"
 #. "(?:[\\w-]+ +)?" in the bug reporting pattern is used to indicate an
 #. optional word, so that either "Report bugs" or "Report _program_ bugs" will
 #. be matched.
-#: help2man:432
+#: help2man:444
 msgid "Report +(?:[\\w-]+ +)?bugs|Email +bug +reports +to"
 msgstr "Про +(?:[\\w-]+ +)?вади повідомляйте|Надсилайте +звіти +щодо +вад"
 
-#: help2man:433
+#: help2man:445
 msgid "Written +by"
 msgstr "Автор —"
 
-#: help2man:434
+#: help2man:446
 msgid "Options"
 msgstr "Параметри"
 
-#: help2man:435
+#: help2man:447
 msgid "Environment"
 msgstr "Середовище"
 
-#: help2man:436
+#: help2man:448
 msgid "Files"
 msgstr "Файли"
 
-#: help2man:437
+#: help2man:449
 msgid "Examples"
 msgstr "Приклади"
 
-#: help2man:438
+#: help2man:450
 msgid "This +is +free +software"
 msgstr "Це +вільне +програмне +забезпечення"
 
-#: help2man:452 help2man:685 help2man.h2m.PL:141
+#: help2man:464 help2man:697 help2man.h2m.PL:141
 msgid "OPTIONS"
 msgstr "ПАРАМЕТРИ"
 
-#: help2man:457 help2man:686 help2man.h2m.PL:142
+#: help2man:469 help2man:698 help2man.h2m.PL:142
 msgid "ENVIRONMENT"
 msgstr "СЕРЕДОВИЩЕ"
 
-#: help2man:462 help2man:686 help2man.h2m.PL:143
+#: help2man:474 help2man:698 help2man.h2m.PL:143
 msgid "FILES"
 msgstr "ФАЙЛИ"
 
-#: help2man:467 help2man:590 help2man:686 help2man.h2m.PL:144
+#: help2man:479 help2man:602 help2man:698 help2man.h2m.PL:144
 msgid "EXAMPLES"
 msgstr "ПРИКЛАДИ"
 
-#: help2man:483 help2man:611 help2man:687 help2man.h2m.PL:148
+#: help2man:495 help2man:623 help2man:699 help2man.h2m.PL:148
 msgid "COPYRIGHT"
 msgstr "Авторські права"
 
-#: help2man:489 help2man:617 help2man:687 help2man.h2m.PL:147
+#: help2man:501 help2man:629 help2man:699 help2man.h2m.PL:147
 msgid "REPORTING BUGS"
 msgstr "Як надіслати звіт про вади"
 
-#: help2man:495 help2man:686 help2man.h2m.PL:146
+#: help2man:507 help2man:698 help2man.h2m.PL:146
 msgid "AUTHOR"
 msgstr "АВТОР"
 
-#: help2man:649 help2man:687 help2man.h2m.PL:149
+#: help2man:661 help2man:699 help2man.h2m.PL:149
 msgid "SEE ALSO"
 msgstr "ТАКОЖ ПЕРЕГЛЯНЬТЕ"
 
-#: help2man:652
+#: help2man:664
 #, perl-format
 msgid ""
 "The full documentation for\n"
@@ -266,19 +275,21 @@ msgstr ""
 ".PP\n"
 "ви зможете отримати доступ до повноцінного підручника.\n"
 
-#: help2man:718
+#: help2man:730
 #, perl-format
 msgid "%s: error writing to %s (%s)"
 msgstr "%s: помилка під час спроби запису до %s (%s)"
 
-#: help2man:744
+#: help2man:756
 #, perl-format
 msgid "%s: can't get `%s' info from %s%s"
 msgstr "%s: не вдалося отримати дані «%s» з %s%s"
 
-#: help2man:746
+#: help2man:758
 msgid "Try `--no-discard-stderr' if option outputs to stderr"
-msgstr "Спробуйте додати параметр «--no-discard-stderr», якщо параметри виводить дані до stderr"
+msgstr ""
+"Спробуйте додати параметр «--no-discard-stderr», якщо параметри виводить "
+"дані до stderr"
 
 #: help2man.h2m.PL:83
 msgid "Include file for help2man man page"
@@ -306,7 +317,8 @@ msgid ""
 "    /pattern/\n"
 "    text\n"
 msgstr ""
-"Включити додаткові матеріали до створеної сторінки можна за допомогою параметрів\n"
+"Включити додаткові матеріали до створеної сторінки можна за допомогою "
+"параметрів\n"
 ".B \\-\\-include\n"
 "та\n"
 ".B \\-\\-opt\\-include\n"
@@ -357,7 +369,8 @@ msgid ""
 "processed as options.  Anything else is silently ignored and may be\n"
 "used for comments, RCS keywords and the like.\n"
 msgstr ""
-"Рядки перед першим розділом або шаблоном, які починаються з набору символів «\\-»,\n"
+"Рядки перед першим розділом або шаблоном, які починаються з набору символів "
+"«\\-»,\n"
 "вважаються визначеннями параметрів. Всі інші такі рядки буде проігноровано,\n"
 "ними можна скористатися для коментування, ключових слів RCS тощо.\n"
 
@@ -405,7 +418,8 @@ msgstr ""
 
 #: help2man.h2m.PL:174
 msgid ""
-"Placement of the text within the section may be explicitly requested by using\n"
+"Placement of the text within the section may be explicitly requested by "
+"using\n"
 "the syntax\n"
 ".RI [< section ],\n"
 ".RI [= section ]\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: Brendan O'Dea <bug-help2man@gnu.org>\n"
-"POT-Creation-Date: 2014-07-26 20:47+1000\n"
+"POT-Creation-Date: 2015-11-02 22:44+1100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: help2man.texi:20
 msgid ""
 "Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010, 2011, "
-"2012, 2013, 2014 Free Software Foundation, Inc."
+"2012, 2013, 2014, 2015 Free Software Foundation, Inc."
 msgstr ""
 
 #. type: titlepage
@@ -80,29 +80,17 @@ msgid ""
 "by the Foundation."
 msgstr ""
 
-#. type: command{#1}
-#: help2man.texi:44 help2man.texi:70
-#, no-wrap
-msgid "help2man"
-msgstr ""
-
 #. type: subtitle
 #: help2man.texi:45
 #, no-wrap
 msgid "A utility for generating simple manual pages"
 msgstr ""
 
-#. type: author
-#: help2man.texi:46
-#, no-wrap
-msgid "Brendan O'Dea @email{bod@@debian.org}"
-msgstr ""
-
 #. type: titlepage
 #: help2man.texi:52
 msgid ""
 "Copyright @copyright{} 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010, "
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc."
+"2011, 2012, 2013, 2014, 2015 Free Software Foundation, Inc."
 msgstr ""
 
 #. type: ifnottex
@@ -295,6 +283,8 @@ msgid ""
 "@samp{manual page for @var{program} @var{version}}."
 msgstr ""
 
+#. Translators: the cross-reference "Including text" here must match the
+#. translation of the target (type: node) elsewhere in this file.
 #. type: table
 #: help2man.texi:128
 msgid ""
@@ -374,6 +364,8 @@ msgstr ""
 msgid "--locale=@var{locale}"
 msgstr ""
 
+#. Translators: the cross-reference "Localised man pages" here must match
+#. the translation of the target (type: node) elsewhere in this file.
 #. type: table
 #: help2man.texi:152
 msgid ""
@@ -394,6 +386,8 @@ msgstr ""
 msgid "--include=@var{file}"
 msgstr ""
 
+#. Translators: the cross-reference "Including text" here must match the
+#. translation of the target (type: node) elsewhere in this file.
 #. type: table
 #: help2man.texi:156
 msgid "Include material from @var{file} (@pxref{Including text})."
@@ -452,35 +446,11 @@ msgstr ""
 msgid "Name of Texinfo manual."
 msgstr ""
 
-#. type: item
-#: help2man.texi:170
-#, no-wrap
-msgid "-N"
-msgstr ""
-
-#. type: itemx
-#: help2man.texi:171
-#, no-wrap
-msgid "--no-info"
-msgstr ""
-
 #. type: table
 #: help2man.texi:174
 msgid ""
 "Suppress inclusion of a @samp{SEE ALSO} paragraph directing the reader to "
 "the Texinfo documentation."
-msgstr ""
-
-#. type: item
-#: help2man.texi:175
-#, no-wrap
-msgid "-l"
-msgstr ""
-
-#. type: itemx
-#: help2man.texi:176
-#, no-wrap
-msgid "--libtool"
 msgstr ""
 
 #. type: table
@@ -489,18 +459,6 @@ msgid ""
 "Drop @file{lt-} prefix from instances of the program name in the synopsis "
 "(@command{libtool} creates wrapper scripts in the build directory which "
 "invoke @command{foo} as @command{.libs/lt-foo})."
-msgstr ""
-
-#. type: item
-#: help2man.texi:181
-#, no-wrap
-msgid "--help"
-msgstr ""
-
-#. type: itemx
-#: help2man.texi:182
-#, no-wrap
-msgid "--version"
 msgstr ""
 
 #. type: table
@@ -559,12 +517,6 @@ msgstr ""
 #. type: table
 #: help2man.texi:201
 msgid "Version string."
-msgstr ""
-
-#. type: item
-#: help2man.texi:202
-#, no-wrap
-msgid "--no-discard-stderr"
 msgstr ""
 
 #. type: table
@@ -733,6 +685,8 @@ msgstr ""
 msgid "Including Additional Text in the Output"
 msgstr ""
 
+#. Translators: the cross-reference "Invoking help2man" here must match the
+#. translation of the target (type: node) elsewhere in this file.
 #. type: Plain text
 #: help2man.texi:310
 msgid ""
@@ -920,6 +874,8 @@ msgstr ""
 msgid "help2man -L fr_FR@@euro -o cp.fr.1 cp\n"
 msgstr ""
 
+#. Translators: the cross-reference "Reports" here must match the
+#. translation of the target (type: node) elsewhere in this file.
 #. type: Plain text
 #: help2man.texi:413
 msgid ""
@@ -990,6 +946,8 @@ msgid ""
 "also have been re-mapped."
 msgstr ""
 
+#. Translators: the cross-reference "Reports" here must match the
+#. translation of the target (type: node) elsewhere in this file.
 #. type: itemize
 #: help2man.texi:452
 msgid ""
@@ -1282,21 +1240,9 @@ msgid ""
 "mirrors:"
 msgstr ""
 
-#. type: example
-#: help2man.texi:588
-#, no-wrap
-msgid "@url{http://ftpmirror.gnu.org/help2man/}\n"
-msgstr ""
-
 #. type: Plain text
 #: help2man.texi:591
 msgid "If automatic redirection fails, the list of mirrors is at:"
-msgstr ""
-
-#. type: example
-#: help2man.texi:594
-#, no-wrap
-msgid "@url{http://www.gnu.org/order/ftp.html}\n"
 msgstr ""
 
 #. type: Plain text
@@ -1304,8 +1250,3 @@ msgstr ""
 msgid "Or if need be you can use the main GNU ftp server:"
 msgstr ""
 
-#. type: example
-#: help2man.texi:599
-#, no-wrap
-msgid "@url{http://ftp.gnu.org/gnu/help2man/}\n"
-msgstr ""
