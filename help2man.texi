@@ -16,7 +16,7 @@ simple manual pages from the @samp{--help} and @samp{--version} output
 of other commands.
 
 Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010, 2011, 2012,
-2013, 2014 Free Software Foundation, Inc.
+2013, 2014, 2015 Free Software Foundation, Inc.
 
 Permission is granted to make and distribute verbatim copies of
 this manual provided the copyright notice and this permission notice
@@ -48,7 +48,7 @@ by the Foundation.
 @page
 @vskip 0pt plus 1filll
 Copyright @copyright{} 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010,
-2011, 2012, 2013, 2014 Free Software Foundation, Inc.
+2011, 2012, 2013, 2014, 2015 Free Software Foundation, Inc.
 
 Permission is granted to make and distribute verbatim copies of
 this manual provided the copyright notice and this permission notice

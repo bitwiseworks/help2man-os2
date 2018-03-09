@@ -1,14 +1,16 @@
 # Finnish translations for help2man package.
-# Copyright (C) 2010 Free Software Foundation, Inc.
+# Copyright © 2010, 2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the help2man package.
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2010.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2015.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: help2man 1.39.1\n"
+"Project-Id-Version: help2man 1.45.2pre1\n"
 "Report-Msgid-Bugs-To: Brendan O'Dea <bug-help2man@gnu.org>\n"
-"POT-Creation-Date: 2014-03-26 21:02+1100\n"
-"PO-Revision-Date: 2011-03-03 10:08+0200\n"
-"Last-Translator: Tommi Vainikainen <Tommi.Vainikainen@iki.fi>\n"
+"POT-Creation-Date: 2017-09-23 13:39+1000\n"
+"PO-Revision-Date: 2017-09-23 13:56+1000\n"
+"Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +25,7 @@ msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
 "2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 "\n"
@@ -33,7 +35,7 @@ msgstr ""
 "\n"
 "Copyright © 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
 "2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "Tämä on vapaa ohjelmist; katsokaa kopiointiehdot lähdekoodista. Takuuta EI "
 "OLE;\n"
 "ei edes KAUPALLISESTI HYVÄKSYTTÄVÄSTÄ LAADUSTA tai SOPIVUUDESTA TIETTYYN\n"
@@ -102,63 +104,63 @@ msgstr ""
 "jäsennettäessä\n"
 "                                  tulostetta\n"
 "\n"
-"Lähetä raportit ohjelmistovioista (englanniksi) osoitteeseen\n"
+"Lähetä ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen\n"
 "<bug-help2man@gnu.org>.\n"
 
 #: help2man:183
 #, perl-format
 msgid "%s: can't open `%s' (%s)"
-msgstr "%s: ei voitu avata tiedostoa \"%s\" (%s)"
+msgstr "%s: tiedoston ”%s” avaus epäonnistui (%s)"
 
 #. Translators: "NAME", "SYNOPSIS" and other one or two word strings in all
 #. upper case are manual page section headings.  The man(1) manual page in your
 #. language, if available should provide the conventional translations.
-#: help2man:209 help2man:328 help2man:334 help2man:685 help2man.h2m.PL:88
+#: help2man:209 help2man:340 help2man:346 help2man:697 help2man.h2m.PL:88
 #: help2man.h2m.PL:138
 msgid "NAME"
 msgstr "NIMI"
 
-#: help2man:209 help2man:403 help2man:685 help2man.h2m.PL:139
+#: help2man:209 help2man:415 help2man:697 help2man.h2m.PL:139
 msgid "SYNOPSIS"
 msgstr "YLEISKATSAUS"
 
 #: help2man:259
 #, perl-format
 msgid "%s: no valid information found in `%s'"
-msgstr "%s: kelvollista tietoa ei löytynyt ohjelmasta \"%s\""
+msgstr "%s: kelvollista tietoa ei löytynyt ohjelmasta ”%s”"
 
 #. Translators: the following message is a strftime(3) format string, which in
 #. the English version expands to the month as a word and the full year.  It
 #. is used on the footer of the generated manual pages.  If in doubt, you may
 #. just use %x as the value (which should be the full locale-specific date).
-#: help2man:277
+#: help2man:289
 msgid "%B %Y"
-msgstr ""
+msgstr "%B %Y"
 
-#: help2man:284
+#: help2man:296
 #, perl-format
 msgid "%s: can't unlink %s (%s)"
 msgstr "%s: ei voi unlinkata/poistaa tiedostoa %s (%s)"
 
-#: help2man:288
+#: help2man:300
 #, perl-format
 msgid "%s: can't create %s (%s)"
-msgstr "%s: ei voitu luoda tiedostoa %s (%s)"
+msgstr "%s: tiedoston %s luominen epäonnistui (%s)"
 
-#: help2man:342
+#: help2man:354
 #, perl-format
 msgid "%s \\- manual page for %s %s"
 msgstr "%s \\- manuaalisivu %s %s"
 
-#: help2man:356
+#: help2man:368
 msgid "System Administration Utilities"
 msgstr "Järjestelmähallinnan sovellukset"
 
-#: help2man:357
+#: help2man:369
 msgid "Games"
 msgstr "Pelit"
 
-#: help2man:358
+#: help2man:370
 msgid "User Commands"
 msgstr "Käyttäjän sovellukset"
 
@@ -168,15 +170,15 @@ msgstr "Käyttäjän sovellukset"
 #. Usage: cp [OPTION]... [-T] SOURCE DEST
 #. or:  cp [OPTION]... SOURCE... DIRECTORY
 #. or:  cp [OPTION]... -t DIRECTORY SOURCE...
-#: help2man:369
+#: help2man:381
 msgid "Usage"
 msgstr "Käyttö"
 
-#: help2man:370
+#: help2man:382
 msgid "or"
 msgstr "tai"
 
-#: help2man:407 help2man:685 help2man.h2m.PL:140
+#: help2man:419 help2man:697 help2man.h2m.PL:140
 msgid "DESCRIPTION"
 msgstr "KUVAUS"
 
@@ -188,67 +190,67 @@ msgstr "KUVAUS"
 #. "(?:[\\w-]+ +)?" in the bug reporting pattern is used to indicate an
 #. optional word, so that either "Report bugs" or "Report _program_ bugs" will
 #. be matched.
-#: help2man:432
+#: help2man:444
 msgid "Report +(?:[\\w-]+ +)?bugs|Email +bug +reports +to"
 msgstr "Ilmoita +(?:[\\w-]+ +)?vioista|Lähetä +raportit"
 
-#: help2man:433
+#: help2man:445
 msgid "Written +by"
 msgstr "Kirjoittan(ut|eet)"
 
-#: help2man:434
+#: help2man:446
 msgid "Options"
 msgstr "Valitsimet"
 
-#: help2man:435
+#: help2man:447
 msgid "Environment"
 msgstr "Ympäristö"
 
-#: help2man:436
+#: help2man:448
 msgid "Files"
 msgstr "Tiedostot"
 
-#: help2man:437
+#: help2man:449
 msgid "Examples"
 msgstr "Esimerkit"
 
-#: help2man:438
+#: help2man:450
 msgid "This +is +free +software"
 msgstr "Tämä +on +vapaa +ohjelmisto"
 
-#: help2man:452 help2man:685 help2man.h2m.PL:141
+#: help2man:464 help2man:697 help2man.h2m.PL:141
 msgid "OPTIONS"
 msgstr "VALITSIMET"
 
-#: help2man:457 help2man:686 help2man.h2m.PL:142
+#: help2man:469 help2man:698 help2man.h2m.PL:142
 msgid "ENVIRONMENT"
 msgstr "YMPÄRISTÖ"
 
-#: help2man:462 help2man:686 help2man.h2m.PL:143
+#: help2man:474 help2man:698 help2man.h2m.PL:143
 msgid "FILES"
 msgstr "TIEDOSTOT"
 
-#: help2man:467 help2man:590 help2man:686 help2man.h2m.PL:144
+#: help2man:479 help2man:602 help2man:698 help2man.h2m.PL:144
 msgid "EXAMPLES"
 msgstr "ESIMERKKEJÄ"
 
-#: help2man:483 help2man:611 help2man:687 help2man.h2m.PL:148
+#: help2man:495 help2man:623 help2man:699 help2man.h2m.PL:148
 msgid "COPYRIGHT"
 msgstr "TEKIJÄNOIKEUDET"
 
-#: help2man:489 help2man:617 help2man:687 help2man.h2m.PL:147
+#: help2man:501 help2man:629 help2man:699 help2man.h2m.PL:147
 msgid "REPORTING BUGS"
 msgstr "VIRHEISTÄ ILMOITTAMINEN"
 
-#: help2man:495 help2man:686 help2man.h2m.PL:146
+#: help2man:507 help2man:698 help2man.h2m.PL:146
 msgid "AUTHOR"
 msgstr "TEKIJÄ"
 
-#: help2man:649 help2man:687 help2man.h2m.PL:149
+#: help2man:661 help2man:699 help2man.h2m.PL:149
 msgid "SEE ALSO"
 msgstr "KATSO MYÖS"
 
-#: help2man:652
+#: help2man:664
 #, perl-format
 msgid ""
 "The full documentation for\n"
@@ -275,17 +277,17 @@ msgstr ""
 ".PP\n"
 "pitäisi antaa täydellinen manuaali luettavaksi.\n"
 
-#: help2man:718
+#: help2man:730
 #, perl-format
 msgid "%s: error writing to %s (%s)"
 msgstr "%s: virhe kirjoitettaessa tiedostoon %s (%s)"
 
-#: help2man:744
+#: help2man:756
 #, perl-format
 msgid "%s: can't get `%s' info from %s%s"
 msgstr "%s: ei saatu \"%s\"-tietoa ohjelmalta %s%s"
 
-#: help2man:746
+#: help2man:758
 msgid "Try `--no-discard-stderr' if option outputs to stderr"
 msgstr "Kokeile ”--no-discard-stderr” mikäli valitsin tulostaa vakiovirheeseen"
 
@@ -425,6 +427,15 @@ msgid ""
 "to place the additional text before, in place of, or after the default\n"
 "output respectively.\n"
 msgstr ""
+"Tekstin sijaintia kappaleen sisällä voidaan eksplisiittisesti pyytää "
+"käyttäen\n"
+"syntaksia\n"
+".RI [< kappale ],\n"
+".RI [= kappale ]\n"
+"tai\n"
+".RI [> kappale ]\n"
+"lisätekstin sijoittamiseksi vastaavasti oletustuloksen eteen, sijalle, tai "
+"jälkeen.\n"
 
 #: help2man.h2m.PL:185
 msgid "AVAILABILITY"

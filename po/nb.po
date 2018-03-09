@@ -1,14 +1,14 @@
 # Norwegian Bokmal translation for help2man package.
 # Copyright © 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2010, 2011, 2012, 2013, 2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the help2man package.
-# Johnny A. Solbu <johnny@solbu.net>, 2014
+# Johnny A. Solbu <johnny@solbu.net>, 2014, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: help2man-1.45.2pre1\n"
+"Project-Id-Version: help2man-1.46.6\n"
 "Report-Msgid-Bugs-To: Brendan O'Dea <bug-help2man@gnu.org>\n"
-"POT-Creation-Date: 2014-03-26 21:02+1100\n"
-"PO-Revision-Date: 2014-10-09 21:26+1100\n"
+"POT-Creation-Date: 2017-09-23 13:39+1000\n"
+"PO-Revision-Date: 2017-09-23 13:57+1000\n"
 "Last-Translator: Johnny A. Solbu <johnny@solbu.net>\n"
 "Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb_NO\n"
@@ -16,15 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: help2man:74
 #, perl-format
 msgid ""
 "GNU %s %s\n"
 "\n"
-"Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
+"2010,\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 "\n"
@@ -32,10 +33,12 @@ msgid ""
 msgstr ""
 "GNU %s %s\n"
 "\n"
-"Opphavsrett (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010,\n"
-"2011, 2012, 2013, 2014 Free Software Foundation, Inc.\n"
-"Dette er fri programvare; se kildekoden for kopieringsbetingelser. Det er ingen\n"
-"garanti; ikke engang for SALGBARHET eller EGNETHET FOR ET BESTEMT FORMÅL.\n"
+"Opphavsrett (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009, "
+"2010,\n"
+"2011, 2012, 2013, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.\n"
+"Dette er fri programvare; se kildekoden for kopieringsbetingelser. Det er "
+"INGEN\t\n"
+"garanti; ikke engang for SALGBARHET eller EGNETHET FOR ET BESTEMT FORMÅL\t.\n"
 "\n"
 "Skrevet av Brendan O'Dea <bod@debian.org>\n"
 
@@ -60,7 +63,8 @@ msgid ""
 "     --help              print this help, then exit\n"
 "     --version           print version number, then exit\n"
 "\n"
-"EXECUTABLE should accept `--help' and `--version' options and produce output on\n"
+"EXECUTABLE should accept `--help' and `--version' options and produce output "
+"on\n"
 "stdout although alternatives may be specified using:\n"
 "\n"
 " -h, --help-option=STRING     help option string\n"
@@ -70,7 +74,8 @@ msgid ""
 "\n"
 "Report bugs to <bug-help2man@gnu.org>.\n"
 msgstr ""
-"«%s» genererer en manual-side ved hjelp av utdata fra «--help» og «--version».\n"
+"«%s» genererer en manual-side ved hjelp av utdata fra «--help» og «--"
+"version».\n"
 "\n"
 "Bruk: %s [VALG] ... KJØRBAR\n"
 "\n"
@@ -88,13 +93,15 @@ msgstr ""
 "     --help              skriv ut denne hjelpen og avslutt\n"
 "     --version           skriv ut versjonsnummer og avslutt\n"
 "\n"
-"KJØRBAR bør akseptere «- help» og «- version» opsjoner og produsere utdata på\n"
+"KJØRBAR bør akseptere «- help» og «- version» opsjoner og produsere utdata "
+"på\n"
 "standard ut selv om alternativer kan spesifiseres ved hjelp av\n"
 "\n"
 " -h, --help-option=STRENG     hjelpevalg-streng\n"
 " -v, --version-option=STRENG  versjonsvalg-streng\n"
 " --version-string=STRENG      versjonsstreng\n"
-" --no-discard-stderr          inkluder standardfeil under analysering av output-valget\n"
+" --no-discard-stderr          inkluder standardfeil under analysering av "
+"output-valget\n"
 "\n"
 "Rapporter feil til <bug-help2man@gnu.org>.\n"
 
@@ -106,12 +113,12 @@ msgstr "%s: kan ikke åpne «%s» (%s)"
 #. Translators: "NAME", "SYNOPSIS" and other one or two word strings in all
 #. upper case are manual page section headings.  The man(1) manual page in your
 #. language, if available should provide the conventional translations.
-#: help2man:209 help2man:328 help2man:334 help2man:685 help2man.h2m.PL:88
+#: help2man:209 help2man:340 help2man:346 help2man:697 help2man.h2m.PL:88
 #: help2man.h2m.PL:138
 msgid "NAME"
 msgstr "NAVN"
 
-#: help2man:209 help2man:403 help2man:685 help2man.h2m.PL:139
+#: help2man:209 help2man:415 help2man:697 help2man.h2m.PL:139
 msgid "SYNOPSIS"
 msgstr "OVERSIKT"
 
@@ -124,34 +131,34 @@ msgstr "%s: ingen gyldig informasjon funnet i «%s»"
 #. the English version expands to the month as a word and the full year.  It
 #. is used on the footer of the generated manual pages.  If in doubt, you may
 #. just use %x as the value (which should be the full locale-specific date).
-#: help2man:277
+#: help2man:289
 msgid "%B %Y"
 msgstr "%B %Y"
 
-#: help2man:284
+#: help2man:296
 #, perl-format
 msgid "%s: can't unlink %s (%s)"
 msgstr "%s: kan ikke delinke %s (%s)"
 
-#: help2man:288
+#: help2man:300
 #, perl-format
 msgid "%s: can't create %s (%s)"
 msgstr "%s: kan ikke opprette %s (%s)"
 
-#: help2man:342
+#: help2man:354
 #, perl-format
 msgid "%s \\- manual page for %s %s"
 msgstr "%s \\- manualside for %s %s"
 
-#: help2man:356
+#: help2man:368
 msgid "System Administration Utilities"
 msgstr "Systemadministrasjonsverktøy"
 
-#: help2man:357
+#: help2man:369
 msgid "Games"
 msgstr "Spill"
 
-#: help2man:358
+#: help2man:370
 msgid "User Commands"
 msgstr "Brukerkommandoer"
 
@@ -161,15 +168,15 @@ msgstr "Brukerkommandoer"
 #. Usage: cp [OPTION]... [-T] SOURCE DEST
 #. or:  cp [OPTION]... SOURCE... DIRECTORY
 #. or:  cp [OPTION]... -t DIRECTORY SOURCE...
-#: help2man:369
+#: help2man:381
 msgid "Usage"
 msgstr "Bruk"
 
-#: help2man:370
+#: help2man:382
 msgid "or"
 msgstr "eller"
 
-#: help2man:407 help2man:685 help2man.h2m.PL:140
+#: help2man:419 help2man:697 help2man.h2m.PL:140
 msgid "DESCRIPTION"
 msgstr "BESKRIVELSE"
 
@@ -181,67 +188,67 @@ msgstr "BESKRIVELSE"
 #. "(?:[\\w-]+ +)?" in the bug reporting pattern is used to indicate an
 #. optional word, so that either "Report bugs" or "Report _program_ bugs" will
 #. be matched.
-#: help2man:432
+#: help2man:444
 msgid "Report +(?:[\\w-]+ +)?bugs|Email +bug +reports +to"
 msgstr "Rapporter +(?:[\\w-]+ +)?feil|Email +feilrapporter +til"
 
-#: help2man:433
+#: help2man:445
 msgid "Written +by"
 msgstr "Skrevet +av"
 
-#: help2man:434
+#: help2man:446
 msgid "Options"
 msgstr "Valg"
 
-#: help2man:435
+#: help2man:447
 msgid "Environment"
 msgstr "Miljø"
 
-#: help2man:436
+#: help2man:448
 msgid "Files"
 msgstr "Filer"
 
-#: help2man:437
+#: help2man:449
 msgid "Examples"
 msgstr "Eksempler"
 
-#: help2man:438
+#: help2man:450
 msgid "This +is +free +software"
 msgstr "Dette +er +fri +programvare"
 
-#: help2man:452 help2man:685 help2man.h2m.PL:141
+#: help2man:464 help2man:697 help2man.h2m.PL:141
 msgid "OPTIONS"
 msgstr "VALG"
 
-#: help2man:457 help2man:686 help2man.h2m.PL:142
+#: help2man:469 help2man:698 help2man.h2m.PL:142
 msgid "ENVIRONMENT"
 msgstr "MILJØ"
 
-#: help2man:462 help2man:686 help2man.h2m.PL:143
+#: help2man:474 help2man:698 help2man.h2m.PL:143
 msgid "FILES"
 msgstr "FILER"
 
-#: help2man:467 help2man:590 help2man:686 help2man.h2m.PL:144
+#: help2man:479 help2man:602 help2man:698 help2man.h2m.PL:144
 msgid "EXAMPLES"
 msgstr "EKSEMPLER"
 
-#: help2man:483 help2man:611 help2man:687 help2man.h2m.PL:148
+#: help2man:495 help2man:623 help2man:699 help2man.h2m.PL:148
 msgid "COPYRIGHT"
 msgstr "OPPHAVSRETT"
 
-#: help2man:489 help2man:617 help2man:687 help2man.h2m.PL:147
+#: help2man:501 help2man:629 help2man:699 help2man.h2m.PL:147
 msgid "REPORTING BUGS"
 msgstr "RAPPORTERING AV FEIL"
 
-#: help2man:495 help2man:686 help2man.h2m.PL:146
+#: help2man:507 help2man:698 help2man.h2m.PL:146
 msgid "AUTHOR"
 msgstr "OPPHAVSMANN"
 
-#: help2man:649 help2man:687 help2man.h2m.PL:149
+#: help2man:661 help2man:699 help2man.h2m.PL:149
 msgid "SEE ALSO"
 msgstr "SE OGSÅ"
 
-#: help2man:652
+#: help2man:664
 #, perl-format
 msgid ""
 "The full documentation for\n"
@@ -268,17 +275,17 @@ msgstr ""
 ".PP\n"
 "gi deg tilgang til hele manualen.\n"
 
-#: help2man:718
+#: help2man:730
 #, perl-format
 msgid "%s: error writing to %s (%s)"
 msgstr "%s: feil ved skriving til %s (%s)"
 
-#: help2man:744
+#: help2man:756
 #, perl-format
 msgid "%s: can't get `%s' info from %s%s"
 msgstr "%s: kan ikke hente «%s»-info fra %s%s"
 
-#: help2man:746
+#: help2man:758
 msgid "Try `--no-discard-stderr' if option outputs to stderr"
 msgstr "Prøv `--no-discard-stderr' Hvis opsjon skriver ut til stderr"
 
@@ -292,7 +299,7 @@ msgstr "help2man \\- generer en enkel manualside"
 
 #: help2man.h2m.PL:92
 msgid "INCLUDE FILES"
-msgstr "INKLUDER FILER"
+msgstr "INKLUDER-FILER"
 
 #: help2man.h2m.PL:94
 msgid ""
@@ -388,7 +395,7 @@ msgstr ""
 ".B [NAVN]\n"
 "eller\n"
 ".B [OVERSIKT]\n"
-"seksjoner som vises i inkluder-filen vil erstatte det som ville\n"
+"seksjoner som vises i include-filen vil erstatte det som ville\n"
 "automatisk ha blitt produsert (selv om du fortsatt kan overstyre\n"
 "det forrige med\n"
 ".B \\-\\-name\n"
@@ -408,7 +415,8 @@ msgstr ""
 
 #: help2man.h2m.PL:174
 msgid ""
-"Placement of the text within the section may be explicitly requested by using\n"
+"Placement of the text within the section may be explicitly requested by "
+"using\n"
 "the syntax\n"
 ".RI [< section ],\n"
 ".RI [= section ]\n"
@@ -417,7 +425,8 @@ msgid ""
 "to place the additional text before, in place of, or after the default\n"
 "output respectively.\n"
 msgstr ""
-"Plassering av teksten innenfor seksjonen kan være eksplisitt forespurt ved hjelp av\n"
+"Plassering av teksten innenfor seksjonen kan være eksplisitt forespurt ved "
+"hjelp av\n"
 "syntaksen\n"
 ".RI [<seksjon],\n"
 ".RI [= seksjon]\n"
@@ -432,4 +441,5 @@ msgstr "TILGJENGELIGHET"
 
 #: help2man.h2m.PL:186
 msgid "The latest version of this distribution is available on-line from:"
-msgstr "Den nyeste versjonen av denne distribusjonen er tilgjengelig på nettet fra:"
+msgstr ""
+"Den nyeste versjonen av denne distribusjonen er tilgjengelig på nettet fra:"
